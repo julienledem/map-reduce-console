@@ -1,0 +1,116 @@
+/*
+Copyright (c) 2011, Yahoo! Inc.  All rights reserved.
+
+Redistribution and use of this software in source and binary forms, 
+with or without modification, are permitted provided that the following 
+conditions are met:
+
+* Redistributions of source code must retain the above
+  copyright notice, this list of conditions and the
+  following disclaimer.
+
+* Redistributions in binary form must reproduce the above
+  copyright notice, this list of conditions and the
+  following disclaimer in the documentation and/or other
+  materials provided with the distribution.
+
+* Neither the name of Yahoo! Inc. nor the names of its
+  contributors may be used to endorse or promote products
+  derived from this software without specific prior
+  written permission of Yahoo! Inc.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS 
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED 
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+*/
+
+#filePickerTree {
+  border: 1px solid #4C4C4C;
+  height: 548px;
+  overflow: scroll;
+  width: 460px;
+}
+#filePickerTree .ygtvspacer {
+    height: 22px;
+    width: 35px;
+}
+#filePickerTree .file-picker-file-node a.ygtvspacer {
+    height: 22px;
+    width: 16px;
+}
+#filePickerTree span{
+    color: #4C4C4C;
+    font-size: 11px;
+    font-family: arial,helvetica,clean,sans-serif;
+}
+
+/* Copyright (c) 2006 Yahoo! Inc. All rights reserved. */
+
+/* first or middle sibling, no children */
+#filePickerTree .ygtvtn { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/tn.gif) 0 0 no-repeat; width:17px; height:22px; }
+
+/* first or middle sibling, collapsable */
+#filePickerTree .ygtvtm { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/tm.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* first or middle sibling, collapsable, hover */
+#filePickerTree .ygtvtmh { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/tmh.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* first or middle sibling, expandable */
+#filePickerTree .ygtvtp { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/tp.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* first or middle sibling, expandable, hover */
+#filePickerTree .ygtvtph { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/tph.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* last sibling, no children */
+#filePickerTree .ygtvln { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/ln.gif) 0 0 no-repeat; width:17px; height:22px; }
+
+/* Last sibling, collapsable */
+#filePickerTree .ygtvlm { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/lm.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* Last sibling, collapsable, hover */
+#filePickerTree .ygtvlmh { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/lmh.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* Last sibling, expandable */
+#filePickerTree .ygtvlp { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/lp.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* Last sibling, expandable, hover */
+#filePickerTree .ygtvlph { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/lph.gif) 0 0 no-repeat; width:34px; height:22px; cursor:pointer }
+
+/* Loading icon */
+#filePickerTree .ygtvloading { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/loading.gif) 0 0 no-repeat; width:16px; height:22px; }
+
+/* the style for the empty cells that are used for rendering the depth 
+ * of the node */
+#filePickerTree .ygtvdepthcell { background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/vline.gif) 0 0 no-repeat; width:17px; height:22px; }
+
+#filePickerTree .ygtvblankdepthcell { width:17px; height:22px; }
+
+/* the style of the div around each node */
+#filePickerTree .ygtvitem { }  
+
+#filePickerTree .ygtvitem  table{
+    margin-bottom:0;
+}
+#filePickerTree .ygtvitem  td {
+    border: none;
+    padding: 0;
+    white-space: nowrap;
+} 
+/* the style of the div around each node's collection of children */
+#filePickerTree .ygtvchildren { }  
+* html .ygtvchildren { height:1%; }  
+
+/* the style of the text label in ygTextNode */
+#filePickerTree .ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover { 
+	margin-left:2px;
+	text-decoration: none;
+}
